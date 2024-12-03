@@ -1,0 +1,24 @@
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 0.3; 
+  }
+  50% { 
+    opacity: 0.1; 
+  }
+}
+
+.pulse-ring {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.pulse-ring-0 {
+  animation-delay: 0s;
+}
+
+.pulse-ring-1 {
+  animation-delay: 0.5s;
+}
+
+.pulse-ring-2 {
+  animation-delay: 1s;
+}
