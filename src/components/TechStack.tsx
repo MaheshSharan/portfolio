@@ -4,12 +4,8 @@ import { useInView } from 'react-intersection-observer';
 import {
   SiJavascript,
   SiPython,
-  SiCsharp,
   SiTypescript,
-  SiCplusplus,
   SiReact,
-  SiAngular,
-  SiVuedotjs,
   SiTailwindcss,
   SiBootstrap,
   SiMaterialdesign,
@@ -17,26 +13,17 @@ import {
   SiExpress,
   SiDjango,
   SiFastapi,
-  SiGraphql,
   SiTensorflow,
   SiPytorch,
   SiScikitlearn,
   SiMongodb,
-  SiPostgresql,
   SiRedis,
-  SiUnity,
-  SiUnrealengine,
-  SiBlender,
   SiAmazon,
-  SiMicrosoftazure,
   SiGooglecloud,
   SiDocker,
-  SiKubernetes,
-  SiGithubactions,
-  SiAndroidstudio,
-  SiFlutter
+  SiGithubactions
 } from 'react-icons/si';
-import { DiJava } from "react-icons/di";
+import { DiJava } from 'react-icons/di';
 import { BiGitBranch } from 'react-icons/bi';
 
 const technologies = {
@@ -46,8 +33,6 @@ const technologies = {
       { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
       { name: "Python", icon: SiPython, color: "text-blue-500" },
       { name: "Java", icon: DiJava, color: "text-red-500" },
-      { name: "C++", icon: SiCplusplus, color: "text-blue-400" },
-      { name: "C#", icon: SiCsharp, color: "text-green-500" },
       { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" }
     ]
   },
@@ -55,8 +40,6 @@ const technologies = {
     title: "Frontend Development",
     items: [
       { name: "React", icon: SiReact, color: "text-cyan-400" },
-      { name: "Angular", icon: SiAngular, color: "text-red-500" },
-      { name: "Vue", icon: SiVuedotjs, color: "text-emerald-500" },
       { name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-500" },
       { name: "Bootstrap", icon: SiBootstrap, color: "text-purple-500" },
       { name: "Material UI", icon: SiMaterialdesign, color: "text-blue-500" }
@@ -68,8 +51,7 @@ const technologies = {
       { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
       { name: "Express", icon: SiExpress, color: "text-gray-400" },
       { name: "Django", icon: SiDjango, color: "text-green-600" },
-      { name: "FastAPI", icon: SiFastapi, color: "text-teal-500" },
-      { name: "GraphQL", icon: SiGraphql, color: "text-pink-500" }
+      { name: "FastAPI", icon: SiFastapi, color: "text-teal-500" }
     ]
   },
   ai_ml: {
@@ -81,26 +63,11 @@ const technologies = {
     ]
   },
   databases: {
-    title: "Databases",
+    title: "Databases & Cloud Services",
     items: [
       { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
-      { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
-      { name: "Redis", icon: SiRedis, color: "text-red-500" }
-    ]
-  },
-  gamedev: {
-    title: "Game Development",
-    items: [
-      { name: "Unity", icon: SiUnity, color: "text-gray-300" },
-      { name: "Unreal Engine", icon: SiUnrealengine, color: "text-white" },
-      { name: "Blender", icon: SiBlender, color: "text-orange-500" }
-    ]
-  },
-  cloud: {
-    title: "Cloud Services",
-    items: [
+      { name: "Redis", icon: SiRedis, color: "text-red-500" },
       { name: "AWS", icon: SiAmazon, color: "text-orange-400" },
-      { name: "Azure", icon: SiMicrosoftazure, color: "text-blue-500" },
       { name: "GCP", icon: SiGooglecloud, color: "text-blue-400" }
     ]
   },
@@ -108,16 +75,8 @@ const technologies = {
     title: "DevOps & CI/CD",
     items: [
       { name: "Docker", icon: SiDocker, color: "text-blue-400" },
-      { name: "Kubernetes", icon: SiKubernetes, color: "text-blue-500" },
       { name: "GitHub Actions", icon: SiGithubactions, color: "text-gray-400" },
       { name: "Git", icon: BiGitBranch, color: "text-orange-500" }
-    ]
-  },
-  mobile: {
-    title: "Mobile Development",
-    items: [
-      { name: "Android", icon: SiAndroidstudio, color: "text-green-500" },
-      { name: "Flutter", icon: SiFlutter, color: "text-blue-400" }
     ]
   }
 };
